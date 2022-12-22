@@ -1,0 +1,16 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
