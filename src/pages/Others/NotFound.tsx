@@ -1,5 +1,3 @@
-import '../../stylesheets/App.css'
-
 function NotFound() {
     return (
         <div className="App">
