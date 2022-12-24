@@ -14,6 +14,7 @@ function Home() {
 
             <br/>
             <br/>
+            <hr/>
             <br/>
 
             <div className="info">
