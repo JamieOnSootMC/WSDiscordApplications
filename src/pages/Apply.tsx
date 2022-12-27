@@ -75,7 +75,6 @@ function Application() {
         <div className="Application">
             <Formik
                 initialValues={{
-                    userEmail: "",
                     userName: "",
                     discordTag: "",
                     discordID: "",
@@ -107,7 +106,6 @@ function Application() {
                     }
                 }}
                 validationSchema={Yup.object().shape({
-                    userEmail: Yup.string().email().required("Required"),
                     userName: Yup.string().required("Required"),
                     discordTag: Yup.string().required("Required"),
                     discordID: Yup.string().required("Required"),
@@ -140,25 +138,6 @@ function Application() {
                     // @ts-ignore
                     return (
                         <form onSubmit={handleSubmit}>
-                            <label htmlFor="userEmail" style={{ display: "block" }}>
-                                What is your email?
-                            </label>
-                            <Field
-                                id="userEmail"
-                                name="userEmail"
-                                placeholder="swag@wilbursoot.live"
-                                type="email"
-                            />
-
-                            <br/>
-                            <br/>
-                            <br/>
-
-                            <hr/>
-
-                            <br/>
-                            <br/>
-
                             <h1> Lets get to know you! </h1>
                             <p>
                                 {" "}
@@ -402,10 +381,6 @@ function Application() {
                     "title": "New Discord Moderator Application!",
                     "color": 3385513,
                     "fields": [
-                        {
-                            "name": "What is your email?",
-                            "value": JSON.parse(enteredValues).userEmail
-                        },
                         {
                             "name": "What is your name?",
                             "value": JSON.parse(enteredValues).userName
