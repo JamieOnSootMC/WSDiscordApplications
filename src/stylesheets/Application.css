@@ -5,6 +5,7 @@ input {
     border-radius: 0.25rem;
     border-width: 0.2rem;
     width: 50rem;
+    margin-bottom: 2rem;
 }
 
 input:hover {
@@ -12,5 +13,22 @@ input:hover {
 }
 
 label {
-    font-size: 1.75rem;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+    margin-bottom: .5rem;
+    color: #33a8a9;
+    text-align: center;
+}
+
+.select {
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border-width: 0.2rem;
+    width: 50rem;
+    margin: 0 auto;
+    background-color: #242424;
+    flood-color: #242424;
 }
