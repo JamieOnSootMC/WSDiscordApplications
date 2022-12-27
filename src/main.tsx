@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import './stylesheets/index.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -8,8 +8,9 @@ import Home from './pages/Home';
 import Layout from "./pages/Layout";
 import NotFound from "./pages/Others/NotFound";
 import Apply from "./pages/Apply";
+import {createRoot} from "react-dom/client";
 
-export default function App() {
+function App(){
     return (
         <BrowserRouter>
             <Routes>
@@ -24,4 +25,5 @@ export default function App() {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// @ts-ignore
+createRoot(document.getElementById('root')).render(<App />);

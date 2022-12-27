@@ -1,0 +1,16 @@
+input {
+    font-size: 1.25rem;
+    border-color: #3a3a48;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border-width: 0.2rem;
+    width: 50rem;
+}
+
+input:hover {
+    border-color: #3a3a50;
+}
+
+label {
+    font-size: 1.75rem;
+}

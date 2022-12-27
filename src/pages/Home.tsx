@@ -29,14 +29,21 @@ function Home() {
 
             <div className="requirements">
                 <h1> Requirements:</h1>
-                <p> UWU </p>
+                <ul>
+                    <li> Must be cool and also swag </li>
+                    <li> Must not be called Josh, we have too many of those </li>
+                </ul>
             </div>
 
             <div className="button">
-                <a href="/apply"> <button> Apply Now! </button> </a>
+                <button className="btn" onClick={handleClick}> Apply Now! </button>
             </div>
         </div>
     )
+}
+
+function handleClick() {
+    window.location.href = "/apply";
 }
 
 export default Home;
